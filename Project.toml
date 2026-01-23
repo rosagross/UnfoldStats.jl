@@ -21,7 +21,7 @@ UnfoldStatsMixedModelsExt = ["UnfoldMixedModels"]
 UnfoldStatsMixedModelsPermutationsExt = ["UnfoldMixedModels", "ClusterDepth", "MixedModelsPermutations"]
 
 [compat]
-BSplineKit = "0.16,0.17,0.18"
+BSplineKit = "0.16,0.17,0.18, 0.19"
 ClusterDepth = "0.2"
 Logging = "1"
 MixedModelsPermutations = "0.2"
@@ -30,7 +30,7 @@ StatsAPI = "1"
 StatsModels = "0.7"
 Unfold = "0.8"
 UnfoldMixedModels = "0.1"
-julia = "1.10,1.11"
+julia = "1.10,1.11, 1.12"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
