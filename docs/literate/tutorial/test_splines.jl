@@ -167,6 +167,10 @@ current_figure()
 
 # ## 4. Extract coefficients & conduct Hotelling's T² tests
 
+# !!! warning
+#     We recently (2026-01-28) found an example where the p-values did not match the marginal effects. We are still investigating this issue. For now be aware, that there is no formal study investigating the appropriatenes of using Hotelings-T² for 2-stage analyses, especially with spline coefficients. One venue we are investigating is, that the spline-coefficients can partially model intercept/DC-activity, which could lead to spuriously small p-values.
+
+
 # We will use a one-sample Hotelling's T² test to test whether at least one of the spline coefficients is different from 0.
 # First, we extract the spline coefficients (for the `continuous` predictor variable) for all subjects. Then we conduct
 # a Hotelling's T² test separately for each channel and time point and extract the correspoding p-value. 
